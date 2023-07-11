@@ -27,7 +27,7 @@ LL::~LL() {
   NodePtr t;
   t = hol;
   int i;
-  for (i = 0; i < size; i++) {
+  while(hol!=NULL) {
     hol = hol->get_next();
     delete t;
     t = hol;
